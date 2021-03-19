@@ -1,2 +1,5 @@
+include ':butterknife-annotation'
+include ':butterknife-compiler'
+include ':butterknife'
 include ':app'
 rootProject.name = "FuckingSourceCodeSample"
