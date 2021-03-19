@@ -5,8 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.CLASS)
-@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.CLASS)//生命周期
+@Target(ElementType.FIELD)//类型
 public @interface BindView {
     int value();
 }

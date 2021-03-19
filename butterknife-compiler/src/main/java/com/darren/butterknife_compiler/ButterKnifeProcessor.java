@@ -8,7 +8,6 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
 
 import java.io.IOException;
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -153,11 +152,13 @@ public class ButterKnifeProcessor extends AbstractProcessor {
         return false;
     }
 
+    //获取类名
     private String getClassName(TypeElement typeElement) {
         String className = typeElement.getSimpleName().toString();
         return className;
     }
 
+    //获取包名
     private String getPackageName(TypeElement typeElement) {
         String packageName = elements.getPackageOf(typeElement).toString();
         return packageName;
